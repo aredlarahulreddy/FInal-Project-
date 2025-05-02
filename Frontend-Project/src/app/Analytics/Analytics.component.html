@@ -1,0 +1,45 @@
+
+
+<nav class="topbar">
+  <div class="topbar-left">
+    <span class="user-display">👤 {{ username }}</span>
+    <ul class="topbar-nav">
+      <li><a href="/overview">Overview</a></li>
+      <li><a href="/analytics">Analytics</a></li>
+      <li><a href="/insights">Insights</a></li>
+    </ul>
+  </div>
+
+  <div class="topbar-right">
+    <button class="btn-exit" (click)="logout()">Logout</button>
+  </div>
+</nav>
+<div class="analytics-dashboard">
+  <header class="analytics-header">
+    <h1>Energy Insights</h1>
+    <p>Tracking Solar, Wind, and Battery Storage Deployment Trends (January to June)</p>
+   
+  </header>
+
+  <section class="chart-container">
+    <canvas id="summaryChart"></canvas>
+  </section>
+
+  <section class="insights">
+    <h2>Key Observations</h2>
+    <ul>
+      <li>
+        <strong>Solar PV Installations:</strong> Installation capacity showed a consistent rise from <strong>120 MW in January</strong> to <strong>250 MW by June</strong>. This reflects the increasing adoption of rooftop solar in residential areas and the rollout of utility-scale solar farms. The trend also aligns with decreasing module costs and improved efficiency in PV technologies.
+      </li>
+      <li>
+        <strong>Wind Turbine Output:</strong> Wind energy production increased from <strong>300 GWh to 420 GWh</strong>, highlighting a period of stable performance supported by favorable wind conditions and expansion in offshore wind capacity. The growth demonstrates how policy incentives and infrastructure investments are maturing in the wind energy sector.
+      </li>
+      <li>
+        <strong>Battery Storage Capacity:</strong> Battery capacity rose sharply from <strong>80 MWh to 240 MWh</strong> over six months — a threefold increase. This surge is likely driven by demand for grid stabilization, peak load shifting, and support for intermittent renewables. Advances in lithium-ion and emerging solid-state technologies are helping reduce costs and expand capacity at scale.
+      </li>
+    </ul>
+    <p class="summary-note">
+      The data underscores strong momentum across all three sectors, with battery storage seeing the most accelerated growth. These trends reflect global efforts to build resilient, sustainable energy systems through diversification and technological innovation. June stands out as a performance peak, likely due to seasonal production highs and fiscal year-end installation pushes.
+    </p>
+  </section>
+</div>

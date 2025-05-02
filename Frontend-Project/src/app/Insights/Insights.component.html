@@ -1,0 +1,63 @@
+
+
+<nav class="topbar">
+  <div class="topbar-left">
+    <span class="user-display">👤 {{ username }}</span>
+    <ul class="topbar-nav">
+      <li><a href="/overview">Overview</a></li>
+      <li><a href="/analytics">Analytics</a></li>
+      <li><a href="/insights">Insights</a></li>
+    </ul>
+  </div>
+
+  <div class="topbar-right">
+    <button class="btn-exit" (click)="logout()">Logout</button>
+  </div>
+</nav>
+
+<div class="dashboard-container">
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="content-header">
+      <h2>Startup Emergence in Clean Energy Sectors (2024)</h2>
+      <p>Distribution of new startups across major clean energy domains based on sectoral innovation focus.</p>
+      <p><strong>Sources:</strong> 
+        <a href="https://www.iea.org/reports/clean-energy-innovation" target="_blank">IEA - Clean Energy Innovation</a>, 
+        <a href="https://en.wikipedia.org/wiki/Renewable_energy" target="_blank">Wikipedia - Renewable Energy</a>
+      </p>
+    </div>
+
+    <div class="chart-section">
+      <canvas class="r1" id="reportsChart"></canvas>
+
+      <div class="chart-description">
+        <p>
+          The pie chart titled <strong>"Startup Emergence by Sector"</strong> illustrates the distribution of innovation-driven startups across key clean energy sectors in 2024. The data reveals distinct patterns of focus and growth potential among emerging technologies.
+        </p>
+        <ul>
+          <li>
+            <strong>Battery Technologies:</strong> Leading with <strong>95 startups</strong>, this sector reflects immense interest in energy storage solutions. Startups are actively pursuing breakthroughs in lithium-ion optimization, solid-state batteries, and grid-scale storage for renewable integration.
+          </li>
+          <li>
+            <strong>Hydrogen:</strong> At <strong>85 startups</strong>, hydrogen innovation is accelerating, especially in clean hydrogen production, fuel cells, and infrastructure to support heavy transport and industrial decarbonization.
+          </li>
+          <li>
+            <strong>Solar:</strong> With <strong>70 startups</strong>, solar remains a major innovation hub. New ventures are focusing on perovskite solar cells, bifacial panels, and AI-powered solar monitoring and forecasting.
+          </li>
+          <li>
+            <strong>Wind:</strong> Hosting <strong>65 startups</strong>, wind innovation is progressing steadily. Key focus areas include offshore floating platforms, aerodynamic turbine enhancements, and modular wind solutions.
+          </li>
+          <li>
+            <strong>Hydropower:</strong> Although it has <strong>40 startups</strong>, hydropower sees targeted innovation in micro-hydro systems and modernizing legacy infrastructure for better efficiency and grid responsiveness.
+          </li>
+        </ul>
+        <p>
+          The chart highlights that in 2024, energy storage (Battery) and clean fuels (Hydrogen) are dominating the startup landscape, signaling a strategic shift towards scalable, flexible, and decarbonized energy infrastructure. These trends reflect where capital, research, and policy incentives are most concentrated.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
